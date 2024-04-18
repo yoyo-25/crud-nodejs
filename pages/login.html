@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/login.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="leftpart">
+            <button class="mynotes" onclick="homedirect()">mynotes</button>
+            <button class="home" onclick="homedirect()">Home</button>
+            <button class="about" onclick="aboutdirect()">About</button>
+        </div>
+        <div class="rightpart">
+            <button class="login" onclick="logindirect()">Login</button>
+            <button class="signup" onclick="signupdirect()">SignUp</button>
+        </div>
+    </nav>
+    <div class="logincardcontainer">
+        <div class="logincard">
+            <form class="loginform" action="/logindata" method="post">
+                <div>
+                    <label for="email">Email ID: </label>
+                    <input class="email" type="email" name="email" id="email" placeholder="email">
+                </div>
+                <div>
+                    <label for="password">Password: </label>
+                    <input class="password" type="password" name="password" id="password" placeholder="password">
+                </div>
+                <div class="submitbtn">
+                    <button type="submit" class="submit_btn">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        function homedirect() {
+            window.location.href = '/';
+        }
+        function aboutdirect() {
+            window.location.href = '/about';
+        }
+        function logindirect() {
+            window.location.href = '/login';
+        }
+        function signupdirect() {
+            window.location.href = '/signup';
+        }
+    </script>
+</body>
+
+</html>

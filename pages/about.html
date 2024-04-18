@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/about.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="leftpart">
+            <button class="mynotes" onclick="homedirect()">mynotes</button>
+            <button class="home" onclick="homedirect()">Home</button>
+            <button class="about" onclick="aboutdirect()">About</button>
+        </div>
+        <div class="rightpart">
+            <button class="login" onclick="logindirect()">Login</button>
+            <button class="signup" onclick="signupdirect()">SignUp</button>
+        </div>
+    </nav>
+    <div class="aboutcard">
+        <div class="aboutcontcard">
+            <span>About This Site</span>
+        </div>
+    </div>
+    <h1>About page</h1>
+    <script>
+        function homedirect(){
+            window.location.href='/';
+        }
+        function aboutdirect(){
+            window.location.href='/about';
+        }
+        function logindirect(){
+            window.location.href='/login';
+        }
+        function signupdirect(){
+            window.location.href='/signup';
+        }
+    </script>
+</body>
+</html>
